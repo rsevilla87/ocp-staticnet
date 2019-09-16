@@ -1,0 +1,10 @@
+TYPE=Ethernet
+DEVICE={{ .Name }}
+BOOTPROTO=none
+ONBOOT=yes
+PREFIX={{ .Mask }}
+IPADDR={{ .IP }}
+GATEWAY={{ .Gateway }}
+PEERDNS=no
+DNS1={{ .DNS }}
+IPV6INIT=no

@@ -1,0 +1,12 @@
+DEVICE={{ .Name }}
+NAME={{ .Name }}
+TYPE=Bond
+BONDING_MASTER=yes
+IPADDR={{ .IP }}
+PREFIX={{ .Mask }}
+GATEWAY={{ .Gateway }}
+DNS1={{ .DNS }}
+ONBOOT=yes
+BOOTPROTO=none
+BONDING_OPTS="mode=1 miimon=100"
+NM_CONTROLLED="no"
